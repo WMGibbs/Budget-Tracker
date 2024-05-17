@@ -1,5 +1,7 @@
 .budget-tracker {
   border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
   min-width: 750px;
 }
 
@@ -20,7 +22,7 @@
 .input,
 .delete-entry {
   height: 30px;
-  font-size: 13;
+  font-size: 13px;
   padding: 0 10px;
   box-sizing: border-box;
 }
@@ -55,4 +57,72 @@
 .controls,
 .summary {
   text-align: right;
+}
+
+@media (max-width: 1200px) {
+  .budget-tracker {
+    min-width: 600px;
+  }
+
+  .budget-tracker th,
+  .budget-tracker td {
+    padding: 8px 15px;
+  }
+
+  .input,
+  .delete-entry {
+    height: 28px;
+    font-size: 12px;
+  }
+
+  .input {
+    padding: 0 8px;
+  }
+}
+
+@media (max-width: 900px) {
+  .budget-tracker {
+    min-width: 450px;
+  }
+
+  .budget-tracker th,
+  .budget-tracker td {
+    padding: 6px 10px;
+  }
+
+  .input,
+  .delete-entry {
+    height: 26px;
+    font-size: 11px;
+  }
+
+  .input {
+    padding: 0 6px;
+  }
+}
+
+@media (max-width: 600px) {
+  .budget-tracker {
+    min-width: 300px;
+  }
+
+  .budget-tracker th,
+  .budget-tracker td {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+
+  .input,
+  .delete-entry {
+    height: 24px;
+    font-size: 10px;
+  }
+
+  .input {
+    padding: 0 4px;
+  }
+
+  .delete-entry {
+    width: 24px;
+  }
 }
