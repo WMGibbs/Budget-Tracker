@@ -1,2 +1,1 @@
-# Budget-Tracker
-My budget tracker project
+This is a budget tracker application that I created using Javascript, CSS, and HTML.
